@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Metros Quadrados</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Calculadora de m²</h1>
+        <p>Escolha o formato que deseja calcular, para casa, apartamento ou terreno.</p>
+    </header>
+   
+    <div class="container">
+
+     <section class="section1">
+
+        <h2>Calcular a área de uma casa, apartamento, ou terreno.</h2>
+
+        <p>O imóvel tem ser retangular, basta informar a largura e o comprimento.</p>
+
+        <label for="largura">Largura (m):</label>
+        <input type ="number" id ="largura" name="largura" required>
+
+        <label for="comprimento">Comprimento (m):</label>
+        <input type="number" id="comprimento" name="comprimento" required>
+
+        <button type="button" onclick="CalcularArea()">Calcular</button>
+
+        <div  id="resultado">
+            
+        </div>
+
+        <h2>Calcular a área de um terreno com quatro lados.</h2>
+            
+    
+       <p>Insira as medidas dos quatro lados do terreno.</p>
+
+        <label for="frente">Frente (m):</label>
+        <input type ="number" id ="frente" name="frente" required>
+
+        <label for="fundo">Fundo (m):</label>
+        <input type="number" id="fundo" name="fundo" required>
+
+        <label for="lateralDireita">Lateral direita (m):</label>
+        <input type="number" id="lateralDireita" name="lateralDireita" required>
+
+        <label for="lateralEsquerda">Lateral esquerda (m):</label>
+        <input type="number" id="lateralEsquerda" name="lateralEsquerda" required>
+
+        <button type="button" onclick="calcularQuatroLados()">Calcular</button> 
+
+        <div id="resultadoQuatroLados">
+               
+        </div>
+
+     </section>
+
+
+    </div>
+    
+
+    
+</body>
+<script src="calcularmetrosquadrados.js"></script>
+
+</html>
