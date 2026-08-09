@@ -47,6 +47,7 @@ body{
 
     font-size: 16px;
     margin-bottom: 15px;
+    color: #797878;
 
     
 }
@@ -70,6 +71,7 @@ label {
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 12px;
 }
 
 input {
@@ -113,6 +115,7 @@ button:hover {
     border-radius: 4px;
     font-size: 14px;
     display: none;
+    
     
 }
 
